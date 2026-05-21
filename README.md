@@ -2,6 +2,7 @@
 
 > DeepSeek FR | DeepSeek V3 & R1 workflows in French
 
+[![MCP Badge](https://lobehub.com/badge/mcp/rocnubie-deepseekfr-mcp)](https://lobehub.com/mcp/rocnubie-deepseekfr-mcp)
 [![smithery](https://smithery.ai/badge/deepseekfr)](https://smithery.ai)
 [![Stdio Transport](https://img.shields.io/badge/transport-stdio-6e6e6e)](https://modelcontextprotocol.io/specification)
 [![Read Only](https://img.shields.io/badge/server-read--only-2ea44f)](#tools)
@@ -64,19 +65,33 @@ _Input:_ no parameters. _Returns:_ text/markdown.
 - `site://deepseekfr/faq` — Short FAQ generated from public site metadata.
 - `site://deepseekfr/links` — Canonical URLs to share with users.
 
+## Prompts
+
+### `tell_me_about_deepseekfr`
+Summarize what the site is, who it's for, and how it works. — DeepSeek FR
+
+### `start_chat_session_deepseekfr`
+Open a chat-evaluation session against the site's models, with sensible defaults. — DeepSeek FR
+
 ## Installation
 
-Clone the repository and point your MCP client at the local entry point.
+### Install via Smithery
 
 ```bash
-git clone https://github.com/<your-account>/deepseekfr-mcp.git
+npx -y @smithery/cli install deepseekfr-mcp --client claude
+```
+
+(Replace `claude` with `cursor`, `windsurf`, or `continue` for those clients.)
+
+### Install from source
+
+```bash
+git clone https://github.com/rocnubie/deepseekfr-mcp.git
 cd deepseekfr-mcp
 pnpm install
 ```
 
-### Claude Desktop
-
-Add to `claude_desktop_config.json` (Settings → Developer → Edit Config):
+Then add to your MCP client config (`claude_desktop_config.json` for Claude Desktop, `mcp.json` for Cursor / Windsurf / Continue):
 
 ```json
 {
@@ -90,10 +105,6 @@ Add to `claude_desktop_config.json` (Settings → Developer → Edit Config):
   }
 }
 ```
-
-### Cursor / Windsurf / Continue
-
-Use the same `mcpServers` block in your client's MCP configuration file.
 
 ### Debug with MCP Inspector
 
@@ -112,7 +123,6 @@ npx @modelcontextprotocol/inspector node src/index.mjs
 ```bash
 pnpm install
 pnpm start                 # run the server over stdio
-pnpm test                  # run the package tests
 ```
 
 ## License

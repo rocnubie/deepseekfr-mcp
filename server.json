@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rocnubie/deepseekfr-mcp",
+  "title": "DeepSeek FR MCP",
+  "description": "Independent French workspace for evaluating DeepSeek-V3-class chat and DeepSeek-R1 reasoning.",
+  "version": "0.1.0",
+  "websiteUrl": "https://deepseekfr.org",
+  "repository": {
+    "url": "https://github.com/rocnubie/deepseekfr-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/rocnubie/deepseekfr-mcp/main/assets/hero.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}
