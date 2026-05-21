@@ -1,0 +1,66 @@
+{
+  "site": {
+    "name": "DeepSeek FR",
+    "tagline": "Independent French workspace for evaluating DeepSeek-V3-class chat and DeepSeek-R1 reasoning. Copy tracks DeepSeek GitHub docs for architecture, 128K context, and published benchmark tables.",
+    "websiteUrl": "https://deepseekfr.org",
+    "supportEmail": "support@deepseekfr.org",
+    "pricingUrl": "https://deepseekfr.org/pricing"
+  },
+  "namespace": "deepseekfr",
+  "pages": [
+    {
+      "slug": "models",
+      "title": "Models",
+      "description": "Supported chat models and capability notes.",
+      "mimeType": "text/markdown",
+      "text": "# DeepSeek FR | DeepSeek V3 & R1 workflows in French\n\nIndependent French workspace for evaluating DeepSeek-V3-class chat and DeepSeek-R1 reasoning. Copy tracks DeepSeek GitHub docs for architecture, 128K context, and published benchmark tables.\n\n## Site basics\n- Site ID: deepseekfr\n- Website: https://deepseekfr.org\n- Default locale: fr\n- Locales: fr, en\n\n## Public feature scope\n- chat\n- pricing\n\n## Official website\nhttps://deepseekfr.org"
+    },
+    {
+      "slug": "pricing",
+      "title": "Pricing",
+      "description": "Canonical pricing entry point.",
+      "mimeType": "text/markdown",
+      "text": "# Pricing\n\nCanonical pricing page: https://deepseekfr.org/pricing"
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ",
+      "description": "Short FAQ generated from public site metadata.",
+      "mimeType": "text/markdown",
+      "text": "# FAQ\n\n## What is this site?\nIndependent French workspace for evaluating DeepSeek-V3-class chat and DeepSeek-R1 reasoning. Copy tracks DeepSeek GitHub docs for architecture, 128K context, and published benchmark tables.\n\n## Where can I get help?\nsupport@deepseekfr.org\n\n## Which site is this?\ndeepseekfr (DeepSeek FR)"
+    },
+    {
+      "slug": "links",
+      "title": "Official Links",
+      "description": "Canonical URLs to share with users.",
+      "mimeType": "text/markdown",
+      "text": "# Official Links\n\n- Website: https://deepseekfr.org\n- Pricing: https://deepseekfr.org/pricing\n- Support: support@deepseekfr.org"
+    }
+  ],
+  "tools": [
+    {
+      "name": "list_models",
+      "description": "Return the canonical list of chat models exposed on the site, with capability notes. (DeepSeek FR)",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# DeepSeek FR — Models\n\nIndependent French workspace for evaluating DeepSeek-V3-class chat and DeepSeek-R1 reasoning. Copy tracks DeepSeek GitHub docs for architecture, 128K context, and published benchmark tables.\n\nCanonical website: https://deepseekfr.org"
+      }
+    },
+    {
+      "name": "get_pricing",
+      "description": "Return the canonical pricing entry point for DeepSeek FR.",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# DeepSeek FR Pricing\n\nOfficial pricing: https://deepseekfr.org/pricing\n\nThis link is the source of truth — refer users here for current plans."
+      }
+    },
+    {
+      "name": "get_official_links",
+      "description": "Return the canonical list of official links for DeepSeek FR (website, support, docs when available).",
+      "result": {
+        "mimeType": "text/markdown",
+        "text": "# Official Links\n\n- Website: https://deepseekfr.org\n- Pricing: https://deepseekfr.org/pricing\n- Support: support@deepseekfr.org"
+      }
+    }
+  ]
+}
