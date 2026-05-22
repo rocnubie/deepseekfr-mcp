@@ -10,7 +10,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Zero Config](https://img.shields.io/badge/setup-zero--config-7c3aed)](#installation)
 
-<p align="center"><a href="https://deepseekfr.org"><img src="./assets/hero.svg" alt="DeepSeek FR" width="720" /></a></p>
 
 A Model Context Protocol server that exposes the canonical DeepSeek FR knowledge surface — models, prompts, and chat workflows, pricing, FAQ, official links — to MCP-compatible AI clients such as Claude Desktop, Cursor, Windsurf, and Continue. Read-only, no API keys, no quota, ~50 ms cold start.
 
